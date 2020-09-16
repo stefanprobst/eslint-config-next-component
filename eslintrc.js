@@ -37,6 +37,13 @@ module.exports = {
     },
   },
   rules: {
+    "no-restricted-globals": [
+      "error",
+      {
+        name: "isNaN",
+        message: "Use Number.isNaN instead.",
+      },
+    ],
     "no-var": ["error"],
     "prefer-const": ["error"],
     "import/order": [
