@@ -37,6 +37,7 @@ module.exports = {
     },
   },
   rules: {
+    "@typescript-eslint/strict-boolean-expressions": "error",
     "no-restricted-globals": [
       "error",
       {

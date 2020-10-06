@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/eslint-config-next-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "eslintrc.js",
   "repository": "git@github.com:stefanprobst/eslint-config-next-component",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
