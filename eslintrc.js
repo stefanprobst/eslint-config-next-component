@@ -30,6 +30,7 @@ module.exports = {
     "import/resolver": {
       typescript: {
         project: "./tsconfig.json",
+        alwaysTryTypes: true,
       },
     },
     react: {
@@ -37,7 +38,6 @@ module.exports = {
     },
   },
   rules: {
-    "@typescript-eslint/strict-boolean-expressions": "error",
     "no-restricted-globals": [
       "error",
       {
@@ -47,13 +47,8 @@ module.exports = {
     ],
     "no-var": ["error"],
     "prefer-const": ["error"],
+    "@typescript-eslint/strict-boolean-expressions": "error",
     "import/no-anonymous-default-export": "error",
-    "node/no-missing-import": [
-      "error",
-      {
-        resolvePaths: ["node_modules/@types"],
-      },
-    ],
     "import/order": [
       "error",
       { alphabetize: { order: "asc", caseInsensitive: true } },
