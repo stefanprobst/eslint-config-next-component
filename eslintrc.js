@@ -47,11 +47,17 @@ module.exports = {
     ],
     "no-var": ["error"],
     "prefer-const": ["error"],
+    "import/no-anonymous-default-export": "error",
+    "node/no-missing-import": [
+      "error",
+      {
+        resolvePaths: ["node_modules/@types"],
+      },
+    ],
     "import/order": [
       "error",
       { alphabetize: { order: "asc", caseInsensitive: true } },
     ],
-    "import/no-anonymous-default-export": "error",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
