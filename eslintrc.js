@@ -6,7 +6,6 @@ module.exports = {
   },
   env: {
     browser: true,
-    "jest/globals": true,
     node: true,
     es2020: true,
   },
