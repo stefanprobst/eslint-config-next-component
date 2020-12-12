@@ -25,6 +25,7 @@ module.exports = {
     "prettier/react",
     "prettier/@typescript-eslint",
   ],
+  plugins: ["simple-import-sort"],
   settings: {
     "import/resolver": {
       typescript: {
@@ -46,12 +47,30 @@ module.exports = {
     ],
     "no-var": ["error"],
     "prefer-const": ["error"],
-    "@typescript-eslint/strict-boolean-expressions": "error",
-    "import/no-anonymous-default-export": "error",
-    "import/order": [
+    "sort-imports": "off",
+    "@typescript-eslint/array-type": [
       "error",
-      { alphabetize: { order: "asc", caseInsensitive: true } },
+      {
+        default: "generic",
+      },
     ],
+    "@typescript-eslint/no-unnecessary-condition": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
+    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
+    "import/first": "error",
+    "import/namespace": "off",
+    "import/newline-after-import": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/no-duplicates": "error",
+    "import/no-named-as-default": "off",
+    "import/order": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -59,8 +78,17 @@ module.exports = {
         aspects: ["invalidHref", "preferButton"],
       },
     ],
+    "jsx-a11y/no-autofocus": [
+      "warn",
+      {
+        ignoreNonDOM: true,
+      },
+    ],
     "jsx-a11y/no-onchange": "off",
+    "react/display-name": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
   },
 };
