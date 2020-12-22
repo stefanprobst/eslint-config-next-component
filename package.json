@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/eslint-config-next-component",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "eslintrc.js",
   "repository": "git@github.com:stefanprobst/eslint-config-next-component",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
@@ -12,7 +12,7 @@
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
     "eslint": ">=7.8",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.0",
