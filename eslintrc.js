@@ -54,6 +54,7 @@ module.exports = {
         default: "generic",
       },
     ],
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-unnecessary-condition": "warn",
     "@typescript-eslint/no-unused-vars": [
       "warn",
